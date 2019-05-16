@@ -1,7 +1,7 @@
 # Whats For Dinner? - Catalog Application for Udacity's Full Stack Developer program
 * This application  provides the ability for users to create weekly menus to keep track what's for dinner.  Users will have the ability to post, edit and delete their own items.
 
-[![Image](png/WhatsForDinner.png)](Image)
+![Image](png/WhatsForDinner.png)](Image)
 
 ## Getting Started
 * You can *[clone](https://github.com/cmudrenko/WFD_Catalog.git)* or *[download](https://github.com/cmudrenko/WFD_Catalog.git)*.
