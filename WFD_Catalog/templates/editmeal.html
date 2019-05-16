@@ -1,0 +1,29 @@
+{% include "header.html" %}
+<h1 class="item">Edit Meal</h1>
+<div class="item">
+<form action="{{url_for('editMeal' ,days_id=days_id, meal_id=meal_id, meal=editedmeal)}}"
+  method="POST">
+  <p>Meal:</p>
+  <input type="text" size="30" name="name" placeholder = '{{meal.name}}'>
+  <p>Ingredients:</p>
+  <input type="text" size="90"  name="ingredients" placeholder = '{{meal.ingredients}}'>
+  <p>Select Day of the Week:</p>
+  <select name="days_id">
+    <option value="" selected="selected"></option>
+    <option value=1 >Monday</option>
+    <option value=2 >Tuesday</option>
+    <option value=3 >Wednesday</option>
+    <option value=4 >Thursday</option>
+    <option value=5 >Friday</option>
+    <option value=6 >Saturday</option>
+    <option value=7 >Sunday</option>
+    <option value=8 >None</option>
+  </select>
+  </br></br>
+  <input type="submit" value ="Update">
+  <a href = "{{url_for('showMeal',days_id=days_id, meal_id=meal_id)}}"><button type="button">Cancel</button></a>
+  </br></br>
+</form>
+</div>
+</body>
+</html>

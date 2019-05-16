@@ -1,0 +1,97 @@
+a:hover {
+	text-decoration: italicize;
+}
+
+header {
+	text-align: left;
+	padding: 15px;
+	overflow: auto;
+	max-width: 100%;
+	display: inline-block;
+	scroll-padding-bottom: 20px;
+	color: whitesmoke;
+
+}
+
+nav {
+	text-align: center;
+	list-style-type: none;
+	max-width: 100%;
+	margin: 0;
+	padding: 1em;
+	color: whitesmoke;;
+}
+
+body {
+	background-image: url(Background.jpg);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	left: 10%;
+	right: 10%;
+	padding: 5px;
+	margin: 5px;
+	font-family: 'Prompt';
+	font-size: 22px;
+	list-style-type: none;
+}
+
+.flash {
+	text-align: center;
+	color: green;
+}
+
+.inline {
+	padding-top: 20px;
+	display: inline;
+}
+
+.item {
+	text-align: center;
+	padding-top: 10px;
+	color: whitesmoke;;
+}
+
+.description {
+	max-width: 80%;
+	text-align-last: auto;
+	padding-left: 10%;
+	color: whitesmoke;;
+}
+
+.button {
+	background-color: rgb(255, 255, 255);
+	color: black;
+	padding: 8px 28px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 22px;
+	margin: 4px 2px;
+	-webkit-transition-duration: 0.5s;
+	transition-duration: 0.5s;
+	cursor: zoom-in;
+}
+
+.button {
+	background-color: white;
+	color: black;
+}
+
+.button:hover {
+
+	color: rgba(255, 255, 255, 0.569);
+	text-decoration: none;
+}
+
+.login {
+	float: right;
+}
+
+
+.loginpage {
+	text-align: center;
+	min-height: 550px;
+}
+
+
+

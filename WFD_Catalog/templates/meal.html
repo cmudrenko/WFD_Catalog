@@ -1,0 +1,13 @@
+{% include "header.html" %}
+<div class="item">
+  <h2 class="inline">{{meal.name}}</h2>
+  </br>
+  <h3 class="inline"><a href = "{{url_for('showDays', days_id=days.id)}}" style="color:black">- {{days.name}}</a></h3>
+  </br>
+  <h3 class="ingredients">{{meal.ingredients}}</h3>
+  </br>
+  <a href = "{{url_for('editMeal', days_id=days.id, meal_id=meal.id)}}" style="color:red">Edit</a>
+  <a href = "{{url_for('deleteMeal', days_id=days.id, meal_id=meal.id)}}" style="color:red">Delete</a>
+</div>
+</body>
+</html>

@@ -1,0 +1,11 @@
+{% include "header.html" %}
+<div class="item">
+<h1>Are you sure you want to delete {{meal.name}} from {{meal.days.name}}?</h1>
+<form action="{{url_for('deleteMeal' ,days_id=days_id, meal_id=meal_id)}}" method="POST">&nbsp
+  <input type="submit" value ="Delete">
+  <a href = "{{url_for('showDays',days_id=days_id)}}"><button type="button">Cancel</button></a>
+  </br></br>
+</form>
+</body>
+</div>
+</html>

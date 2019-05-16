@@ -1,0 +1,10 @@
+{% include "header.html" %}
+<div class="item">
+  <h2 class="inline">{{meal.name}}</h2>
+  &nbsp&nbsp
+  <h3 class="inline"><a href = "{{url_for('showDays', days_id=days.id)}}" style="color:black">- {{days.name}}</a></h3>
+  <h3 class="ingredients">{{meal.ingredients}}</h3>
+</div>
+</body>
+</html>
+       

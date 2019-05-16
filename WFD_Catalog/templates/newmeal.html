@@ -1,0 +1,28 @@
+{% include "header.html" %}
+<h1 class="item">New Meal</h1>
+<div class="item">
+<form action="{{url_for('newMeal')}}"
+  method="POST">
+  <p>Name:</p>
+  <input type="text" size="30" name="name">
+  <p>Ingredients:</p>
+  <input type="text" size="30" name="ingredients">
+  <p>Assign:</p>
+  <select name="days_id">
+    <option value=1 >Monday</option>
+    <option value=2 >Tuesday</option>
+    <option value=3 >Wednesday</option>
+    <option value=4 >Thursday</option>
+    <option value=5 >Friday</option>
+    <option value=6 >Saturday</option>
+    <option value=7 >Sunday</option>
+    <option value=8 >None</option>
+  </select>
+  </br></br>
+  <input type="submit" value ="Create">
+  <a href = "{{url_for('showWhatsfordinner')}}"><button type="button">Cancel</button></a>
+  </br></br>
+</form>
+</div>
+</body>
+</html>

@@ -1,0 +1,18 @@
+{% include "header.html" %}
+<nav>
+        <p><a href = "{{url_for('newMeal')}}" style="color:green">Create New Meal</a></br></p>
+        <ul>
+            {% for i in meal %}
+            <!--<li>-->
+              <h2><a href = "{{url_for('showDays', days_id = i.days.id, meal_id=i.id)}}" style="color:black"></a>{{i.days.name}}<br>{{i.name}}</a></h2>
+              <h3 class="ingredients">{{i.ingredients}}</h3>
+            </br>
+            <a href = "{{url_for('editMeal', days_id=i.days.id, meal_id=i.id)}}" style="color:red">Edit</a>
+            <a href = "{{url_for('deleteMeal', days_id=i.days.id, meal_id=i.id)}}" style="color:red">Delete</a>
+            <!--</li>-->
+            {% endfor %}
+          </ul>
+</nav>
+</body>
+</html>
+

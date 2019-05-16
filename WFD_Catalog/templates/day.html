@@ -1,0 +1,15 @@
+{% include "header.html" %}
+<div class="item">
+  <h2>{{days.name}}</h2>
+  <ul>
+    {% for i in meal %}
+    <li>
+      <a href = "{{url_for('showMeal', days_id=days.id ,meal_id=i.id)}}" style="color:black">{{i.name}}</a>
+      <h3 class="ingredients">{{i.ingredients}}</h3>
+    </li>
+    {% endfor %}
+  </ul> 
+  </br>
+</div>
+</body>
+</html>
