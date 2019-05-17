@@ -13,6 +13,8 @@ You will need to install these following application in order to make this code 
 You will also need to download these following files to make it work.
 * [VM configuration](https://d17h27t6h515a5.cloudfront.net/topher/2017/August/59822701_fsnd-virtual-machine/fsnd-virtual-machine.zip)
 
+Google API OAuth Credentials need have the user's key information and then files can be updated with resulted JSON file and client secret information.
+
 ### Installing
 
 * Unzip the **VM configuration** and you will find a **vagrant** folder
