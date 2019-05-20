@@ -4,9 +4,9 @@
 <form action="{{url_for('newMeal')}}"
   method="POST">
   <p>Name:</p>
-  <input type="text" size="30" name="name">
+  <input type="text" size="30" name="name" required>
   <p>Ingredients:</p>
-  <input type="text" size="30" name="ingredients">
+  <input type="text" size="30" name="ingredients" required>
   <p>Assign:</p>
   <select name="days_id">
     <option value=1 >Monday</option>
